@@ -1,4 +1,4 @@
-# aisearch
+# AiSearch
 AI Search - search images using descriptions
 
 This is a simple search application written in Python for finding pictures based on what objects they contain. It’s based on Manuel Fay’s ImageSearcher library. The library is rather old, so it might not be optimal for very new types of objects.
