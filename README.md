@@ -1,34 +1,37 @@
 # AiSearch
-AI Search - search images using descriptions
+AI Search - search images using terms
 
-This is a simple search application written in Python for finding pictures based on what objects they contain. It’s based on Manuel Fay’s ImageSearcher library. The library is rather old, so it might not be optimal for very new types of objects.
+This is a simple search application written in Python for finding pictures based on what objects they contain. It’s based on OpenCLIP.
 
 ## Description ##
 
-It creates a local web page that lists all search hits with links to full size pictures.
+An index file is stored directly under the given search root. When images are added it will index those too.
+
+It indexes JPEG, PNG, GIF, BMP, WEBP and TIFF files recursively. It doesn't support any RAW format, nor video.
+
+Indexing will take a long time the first time. Progress is displayed. Only changes will be indexed from then on.
+
+It creates an HTML page that lists all search hits with links to full size pictures. It's stored under the search root.
 
 Each search creates a new web page that includes the search term in the file name for easy reference.
 
-It searches only JPEG files.
-
-Indexing will take a long time the first time. Only changes will be indexed from then on.
-
-The index is stored in the root of the given start folder. It will index all image files under that folder recursively. When images are added it will index those too.
-
 ## Installation ##
 
-* Run pip install image-searcher
+Run "pip install open_clip_torch" to get the image search module.
+Run "pip uninstall torch torchvision -y" if you have the CPU version of Pytorch to avoid conflict.
+Run "pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126" (or later; see https://pytorch.org/) to get GPU acceleration.
 
 ## Use ##
 
-* Go to where this document and aisearch.py was stored.
+* Go to where this document and aisearch.py were stored.
 * Run “python aisearch.py”.
-* Image path: The path to the root of the picture archive. The created index is stored here.
+* Image path: The path to the root of the picture archive. The created index and generated HTML files are stored here.
 * Search terms: A phrase describing the looked-for object. Write "x" for exit.
 * Amount (100): How many search hits you want.
-* It loops for more searches.
+* It asks for new search terms until you enter "x".
 
 ## References ##
 
-* https://github.com/ManuelFay/ImageSearcher
+* https://github.com/mlfoundations/open_clip
 * https://openai.com/index/clip/
+* https://pytorch.org/get-started/locally/
