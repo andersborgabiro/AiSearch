@@ -15,6 +15,11 @@ It creates an HTML page that lists all search hits with links to full size pictu
 
 Each search creates a new web page that includes the search term in the file name for easy reference.
 
+## Variants
+
+* aisearch.py uses a command line interface
+* aisearch_gui.py uses a Tkinter GUI interface
+
 ## Installation ##
 
 Run "pip install open_clip_torch" to get the image search module.
