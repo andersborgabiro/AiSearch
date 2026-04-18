@@ -35,6 +35,13 @@ Run "pip install torch torchvision --index-url https://download.pytorch.org/whl/
 * Amount (100): How many search hits you want.
 * It asks for new search terms until you enter "x".
 
+## Warnings ##
+
+If you see the following it's perfectly OK:
+
+*Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.*
+
 ## References ##
 
 * https://github.com/mlfoundations/open_clip
