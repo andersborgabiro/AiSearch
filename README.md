@@ -47,3 +47,7 @@ WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated req
 * https://github.com/mlfoundations/open_clip
 * https://openai.com/index/clip/
 * https://pytorch.org/get-started/locally/
+
+## Example ##
+
+<img width="1178" height="1586" alt="AiSearch Example 1" src="https://github.com/user-attachments/assets/a36813a4-383b-4e86-8fd0-be0e1518c785" />
